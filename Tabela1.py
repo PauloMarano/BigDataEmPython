@@ -11,6 +11,6 @@ dfArr.at[0, 'ValorTotal'] = soma_total;
 
 coluna_Final = dfArr[['Arr', 'ValorTotal']];
 
-coluna_Final.to_csv(R'Tabela1.csv', index=False, sep=';', decimal='.');
+coluna_Final.to_csv(R'Tabela1.csv', index=False, sep=';', decimal=',');
 
 print(coluna_Final);

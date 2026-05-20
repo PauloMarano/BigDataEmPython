@@ -10,6 +10,6 @@ dfMedia['Mes'] = dfMedia['Mes'].replace({'February': 'Fevereiro', 'March': 'Mar√
 
 tabela_final = dfMedia.groupby('Mes')['Satisfacao Media'].mean().round(2).reset_index();
 
-tabela_final.to_csv(R'Tabela2.csv', index=False, sep=';', decimal='.');
+tabela_final.to_csv(R'Tabela2.csv', index=False, sep=';', decimal=',');
 
 print(tabela_final);
