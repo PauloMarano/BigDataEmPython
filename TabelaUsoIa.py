@@ -12,6 +12,4 @@ totalGeral = tabelaIa['Quantidade'].sum();
 colunaTotal = pd.DataFrame([['Total Geral', totalGeral]], columns=['StatusIA', 'Quantidade']);
 tabelaFinal = pd.concat([tabelaIa, colunaTotal], ignore_index=True);
 
-tabelaFinal.to_csv(R'Tabela4.csv', index=False, sep=';', encoding='latin-1');
-
-print(tabelaFinal);
+tabelaFinal.to_csv(R'TabelaUsoIa.csv', index=False, sep=';', encoding='latin-1');

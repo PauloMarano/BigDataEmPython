@@ -20,6 +20,6 @@ tabela5 = pd.DataFrame([{
     'Cenário Atual': round(MediaAtual, 2),
     'Cenário Simulado': round(MediaSimulada, 2),
     'Ganho Estimado': round(MediaSimulada - MediaAtual, 2)
-}])
+}]) 
 
-tabela5.to_csv(R'Tabela5.csv', index=False, sep=';', encoding='latin-1')
+tabela5.to_csv(R'TabelaSimuladaSatisfacao.csv', index=False, sep=';', encoding='latin-1')

@@ -8,8 +8,6 @@ dfMedia['Data'] = pd.to_datetime(dfMedia['Data']);
 dfMedia['Mes'] = dfMedia['Data'].dt.month_name();
 dfMedia['Mes'] = dfMedia['Mes'].replace({'February': 'Fevereiro', 'March': 'Março', 'April': 'Abril'});
 
-tabela_final = dfMedia.groupby('Mes')['Satisfacao Media'].mean().round(2).reset_index();
+tabelaFinal = dfMedia.groupby('Mes')['Satisfacao Media'].mean().round(2).reset_index();
 
-tabela_final.to_csv(R'Tabela2.csv', index=False, sep=';', decimal=',');
-
-print(tabela_final);
+tabelaFinal.to_csv(R'TabelaMediaSatisfacao.csv', index=False, sep=';', decimal=',');
